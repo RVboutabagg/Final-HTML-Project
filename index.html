@@ -8,7 +8,7 @@
 <body>
      <!-- Main heading about Cal Poly SLO -->
     <h1 style="font-family: Arial, sans-serif; color: #2E8B57;">Why Cal Poly SLO is a Great School</h1>
-
+<img src="about-calpoly-aerial.avif" alt="Cal Poly SLO Campus" width="400">
     <p style="font-size: 1.2em;">
         <strong>Cal Poly San Luis Obispo</strong> is known for its <em>Learn by Doing</em> philosophy, outstanding academic programs, and vibrant campus life. Students benefit from hands-on experiences, supportive faculty, and beautiful surroundings.
     </p>
@@ -27,7 +27,42 @@
         <br>
         <b>3. Strong community and student support</b>
     </p>
+    <form action="second-page.html" method="get" style="margin-top: 2em; border: 1px solid #ccc; padding: 1em; max-width: 400px;">
+        <label for="major">Choose your intended major:</label>
+        <select id="major" name="major" required>
+            <option value="">Select...</option>
+            <option value="engineering">Engineering</option>
+            <option value="architecture">Architecture</option>
+            <option value="business">Business</option>
+        </select>
+        <br><br>
 
+        <label>Year in school:</label><br>
+        <input type="radio" id="freshman" name="year" value="freshman" required>
+        <label for="freshman">Freshman</label>
+        <input type="radio" id="sophomore" name="year" value="sophomore">
+        <label for="sophomore">Sophomore</label>
+        <input type="radio" id="junior" name="year" value="junior">
+        <label for="junior">Junior</label>
+        <input type="radio" id="senior" name="year" value="senior">
+        <label for="senior">Senior</label>
+        <br><br>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="visit">Have you visited campus?</label>
+        <select id="visit" name="visit" required>
+            <option value="">Select...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="planning">Planning to visit</option>
+        </select>
+        <br><br>
+
+        <button type="button" onclick="window.location.href='results.html '">Submit</button>
+    </form>
     <img src="about-calpoly-aerial.avif" alt="Cal Poly SLO Campus" width="400">
 
     <!-- <p>This line is commented out and will not appear on the website.</p> -->
